@@ -1,0 +1,108 @@
+.lanzamientos {
+    background-image: url(../img/nuevoslanzamientos1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 350px;
+    font-family: 'Courier New', Courier, monospace;
+    color: $color-secundario;
+    padding-top: 140px;
+    text-align: center;
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        margin: 0 0 5px 0;
+        font-weight: bolder;
+        color: $color-secundario;
+    }
+
+    button {
+        @extend %button;
+
+        &:hover {
+            background-color: $color-secundario;
+            color: $color-principal;
+        }
+    }
+}
+
+.titulosecundario {
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
+}
+
+.grid-galeria {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    gap: 10px;
+
+    .img-1 {
+        grid-column: span 2;
+    }
+
+    .img-5 {
+        grid-row: span 2;
+    }
+
+    .img-6 {
+        grid-column: span 2;
+    }
+
+    .grid-item {
+        position: relative;
+        grid-template-rows: auto auto 1fr auto;
+        padding: 15px;
+        box-sizing: border-box;
+
+        a {
+            img {
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+
+            h3 {
+                position: absolute;
+                top: 0%;
+                color: $color-secundario;
+                background-color: $color-principal;
+                padding: 5px;
+                font-size: 20px;
+                margin-top: 15px;
+
+                &:hover {
+                    background-color: $color-secundario;
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}
+
+p {
+    font-size: 15px;
+    color: #000000;
+}
+
+button {
+    font-size: 15px;
+    padding: 1px;
+    margin-top: 0;
+    @extend %button;
+
+    &:hover {
+        font-size: 15px;
+        background-color: $color-secundario;
+        color: $color-principal;
+        padding: 2px;
+    }
+}

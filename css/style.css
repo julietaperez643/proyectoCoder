@@ -50,20 +50,11 @@ h1 {
   color: #ffffff;
 }
 
-.img-user {
-  width: 30px;
-  height: auto;
-}
-
 /*MAIN*/
 
 main {
   flex: 1;
   background-color: #ffffff;
-}
-
-p {
-  margin: 0 0 5px 0;
 }
 
 .lanzamientos {
@@ -75,9 +66,17 @@ p {
   color: #ffffff;
   height: 350px;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
   padding-top: 140px;
   text-align: center;
+}
+
+.lanzamientos h2 {
+  font-size: 35px;
+}
+
+.lanzamientos p {
+  margin: 0 0 5px 0;
+  font-weight: bolder;
 }
 
 .lanzamientos button {
@@ -86,75 +85,10 @@ p {
   color: #ffffff;
 }
 
-.titulosecundario {
+.titulosecundario h2 {
   text-align: center;
   font-size: 25px;
   margin: 10px;
-}
-
-main section div a {
-  text-decoration: none;
-  color: #000000;
-}
-
-/*FOOTER*/
-footer {
-  background-color: #bab09b;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer p {
-  color: #ffffff;
-}
-
-.suscripcion {
-  margin: 5px;
-  color: #ffffff;
-}
-
-.enviarbutton {
-  font-size: 17px;
-  color: #212529;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 0;
-}
-
-.contacto h2 {
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-}
-
-footer section div img {
-  width: 50px;
-  height: auto;
-}
-
-.direccion {
-  margin: 5px;
-}
-
-footer section div {
-  text-align: center;
-}
-
-.contacto div {
-  display: flex;
-}
-
-footer section div p {
-  padding: 15px;
-}
-
-footer section div img {
-  margin: 3px;
-}
-
-iframe {
-  width: 250px;
-  height: 200px;
 }
 
 /*PRODUCTOS*/
@@ -236,8 +170,11 @@ iframe {
 
 .enviarmensaje {
   font-size: 17px;
-  margin-top: 10px;
+  color: #212529;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   border-radius: 0;
+  margin: 5px;
 }
 
 /*POLÍTICAS*/
@@ -261,24 +198,6 @@ iframe {
   gap: 10px;
 }
 
-.grid-galeria div img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-
-.img-1 {
-  grid-column: span 2;
-}
-
-.img-5 {
-  grid-row: span 2;
-}
-
-.img-6 {
-  grid-column: span 2;
-}
-
 .grid-item {
   position: relative;
   grid-template-rows: auto auto 1fr auto;
@@ -286,7 +205,7 @@ iframe {
   box-sizing: border-box;
 }
 
-.grid-item h3 {
+.grid-item a h3 {
   position: absolute;
   top: 0%;
   color: #ffffff;
@@ -310,6 +229,24 @@ iframe {
   color: #000000;
 }
 
+.grid-galeria div img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.img-1 {
+  grid-column: span 2;
+}
+
+.img-5 {
+  grid-row: span 2;
+}
+
+.img-6 {
+  grid-column: span 2;
+}
+
 /*PSEUDO CLASES*/
 
 .lanzamientos button:hover {
@@ -329,7 +266,67 @@ iframe {
   padding: 2px;
 }
 
+/*FOOTER*/
+footer {
+  background-color: #bab09b;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.suscripcion {
+  margin: 5px;
+  color: #ffffff;
+}
+
+.enviarbutton {
+  font-size: 17px;
+  color: #212529;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+}
+
+.contacto h2 {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contacto div img {
+  width: 50px;
+  height: 50px;
+}
+
+.direccion {
+  margin: 5px;
+}
+
+.contacto div {
+  display: flex;
+}
+
+footer section div p {
+  padding: 15px;
+  color: #ffffff;
+}
+
+.contacto div img {
+  margin: 3px;
+}
+
+iframe {
+  width: 250px;
+  height: 200px;
+}
+
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 1105px) {
+  .grid-galeria {
+    grid-auto-rows: 450px;
+  }
+}
 
 @media screen and (max-width: 994px) {
   .navbar-toggler {

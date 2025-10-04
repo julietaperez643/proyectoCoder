@@ -1,0 +1,14 @@
+$color-principal: #bab09b;
+$color-secundario: #ffffff;
+
+%button {
+    color: $color-secundario;
+    background-color: $color-principal;
+    border: none;
+}
+
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

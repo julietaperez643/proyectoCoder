@@ -1,0 +1,86 @@
+footer {
+    background-color: $color-principal;
+    background-color: #bab09b;
+    @include flex (flex, space-between, center);
+
+    .suscripcion {
+        div {
+            margin: 5px;
+            color: $color-secundario;
+
+            p {
+                padding: 15px;
+                color: $color-secundario;
+            }
+
+            form {
+                .enviarbutton {
+                    font-size: 17px;
+                    color: #212529;
+                    background-color: #ffffff;
+                    border: none;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .contacto {
+        h2 {
+            font-size: 20px;
+            color: $color-secundario;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 3px;
+            }
+
+            p {
+                padding: 15px;
+                color: $color-secundario;
+            }
+
+        }
+
+        div {
+
+            p {
+                padding: 15px;
+                color: $color-secundario;
+            }
+
+        }
+
+        div {
+
+            p {
+                padding: 15px;
+                color: $color-secundario;
+            }
+
+        }
+
+    }
+
+    .direccion {
+        margin: 5px;
+
+        div {
+            p {
+                color: $color-secundario;
+            }
+
+            iframe {
+                width: 250px;
+                height: 200px;
+            }
+        }
+
+    }
+}

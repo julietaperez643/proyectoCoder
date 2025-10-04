@@ -1,0 +1,47 @@
+.products {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+
+    div {
+        position: relative;
+
+        img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 15px;
+            position: absolute;
+            top: 0%;
+            color: #ffffff;
+            background-color: #bab09b;
+            padding: 5px;
+            margin-left: 0px;
+
+            &:hover {
+                background-color: $color-secundario;
+                color: $color-principal;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 15px;
+            margin: 5px;
+            @extend%button;
+
+            &:hover {
+                background-color: $color-secundario;
+                color: $color-principal;
+            }
+        }
+    }
+
+}

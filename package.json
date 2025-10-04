@@ -1,0 +1,19 @@
+{
+  "name": "poyectocoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julietaperez643/proyectoCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julietaperez643/proyectoCoder/issues"
+  },
+  "homepage": "https://github.com/julietaperez643/proyectoCoder#readme"
+}
