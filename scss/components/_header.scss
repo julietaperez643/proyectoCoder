@@ -4,17 +4,50 @@ body {
     flex-direction: column;
 
     header {
-        /*background-color: $color-principal;*/
         background: #BAB09B;
-        background: linear-gradient(90deg, rgba(186, 176, 155, 1) 0%, rgba(219, 212, 189, 1) 68%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(186, 176, 155, 1) 0%, rgba(201, 192, 173, 1) 70%, rgba(224, 219, 200, 1) 100%);
 
-        h1 {
-            color: $color-secundario;
-            font-size: 70px;
-            font-style: italic;
-            text-align: center;
-            padding: 10px;
+        .navbar {
+            .dropdown-menu {
+                .dropdown-item {
+                    color: $color-principal;
 
+                }
+            }
+
+            img {
+                width: 200px;
+                height: 70px;
+                margin-left: 1vw;
+            }
+
+            div {
+                a {
+                    transition: 0.5s;
+                    font-size: 18px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                div {
+                    a {
+                        color: $color-secundario;
+                        margin: 2px;
+
+                        .bi-bag {
+                            font-size: 25px;
+                            margin-left: 10px;
+                        }
+
+                        .bi-person {
+                            font-size: 30px;
+                        }
+
+                    }
+                }
+            }
         }
 
         .nav-link {
@@ -27,13 +60,28 @@ body {
 
         .btn {
             padding: 5px;
-            color:$color-principal;
-            background-color:$color-secundario;
+            color: $color-principal;
+            background-color: $color-secundario;
+            transition: 0.5s;
+            border-radius: 0.375rem;
 
             &:hover {
                 color: $color-principal;
-                background-color:$color-secundario;
+                background-color: $color-secundario;
                 font-size: 17px;
+            }
+        }
+
+        .form-control {
+            border-radius: 0.375rem;
+
+            &::placeholder {
+                color: $color-principal;
+            }
+
+            &:focus {
+                border-color: $color-principal !important;
+                box-shadow: 0 0 0 0.2rem $color-principal !important;
             }
         }
     }

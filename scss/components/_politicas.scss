@@ -1,0 +1,25 @@
+.accordion {
+    margin: 10px;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+}
+
+.accordion-button {
+    font-size: 20px;
+    color: $color-secundario !important;
+    background-color: $color-principal !important;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.01) !important;
+    }
+
+    &:focus {
+        border-color: $color-principal !important;
+        box-shadow: 0 0 0 0.2rem $color-principal !important;
+    }
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
